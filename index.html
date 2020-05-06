@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+		<header>
+			<div class="container-fluid">
+				<div class="header_top">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					  <a class="navbar-brand" href="#">STE<span style="color:red">.</span>AM</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					     <li class="nav-item">
+					        <a class="nav-link" href="#">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Get Started</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">How it works</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Pricing</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#">Support</a>
+					      </li>	      
+					    </ul>
+					    <form class="form-inline my-2 my-lg-0">
+					       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login / Signup</button>
+					      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Get Listed Today</button>
+					    </form>
+					  </div>
+					</nav>
+				</div>
+				<div class="header_bottom">
+					<h1><span style="font-weight: 300;">Find the </span> 
+						<span style="font-weight: 900;">next event</span> 
+						<span style="font-weight: 300;">you'll want</span>
+						<span style="font-weight: 900;"> to attend</span> 
+					</h1>
+				</div>
+			</div>
+		</header>
+		<!-- GOOGLE API -->
+			<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.433378724265!2d77.25687682835475!3d28.58677288419177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM1JzExLjkiTiA3N8KwMTUnMjMuNCJF!5e0!3m2!1sru!2sua!4v1588691554119!5m2!1sru!2sua" width="100%" height="475px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>	
+			</div>
+		<!-- FORM -->
+		
+		<div class="form">
+			<div class="container-fluid form-flex">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Hot Events</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Trending Events</a>
+				  </li>
+				</ul>
+				<form class="search">
+					  <div class="form-row">
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Events">
+					    </div>
+					    <div class="col">
+					      <input type="text" class="form-control location" placeholder="Location">
+					    </div>
+					  </div>
+				</form>
+				
+				<div class="kalendar">
+					<a href="#" class="kalendar2">
+						<img src="sprite/kalendar.png" alt="kalendar">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- CONTENT -->
+		<div class="content_fon">
+			<div class="container-fluid">
+				<div class="tab-content" id="myTabContent">
+				  	<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					  	<div class="content_1">
+					  		<div class="img_content">
+					  			<img src="img/6.png" alt="Act Big! Ultimate Music Festival" class="img_1">
+					  		</div>
+					  		<div class="text_content"></div>
+					  		<div class="information_content">
+					  			<div class="man_percent"></div>
+					  			<div lass="woman_percent"></div>
+					  		</div>
+					  	</div>
+					  	<div class="content_2"></div>
+					  	<div class="content_3"></div>
+					  	<div class="content_4"></div>
+					  	<div class="content_5"></div>
+					  	<div class="content_6"></div>
+				 	</div>
+				  	<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				  		<div class="content_7"></div>
+					  	<div class="content_8"></div>
+					  	<div class="content_9"></div>
+					  	<div class="content_10"></div>
+					  	<div class="content_11"></div>
+					  	<div class="content_12"></div>
+				  	</div>		
+				</div>
+			</div>
+		</div>
+		
+</body>
+</html>
